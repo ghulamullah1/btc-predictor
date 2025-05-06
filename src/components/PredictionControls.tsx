@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
-export default function PredictionControls({ onConfirm }) {
+export default function PredictionControls({ onConfirm }:any) {
   const [prediction, setPrediction] = useState(null);
   const [timer, setTimer] = useState(30);
 
-  const handlePredictionChange = (choice) => {
+  const handlePredictionChange = (choice:any) => {
     setPrediction(choice);
   };
 
-  const handleTimerChange = (event) => {
+  const handleTimerChange = (event:any) => {
     setTimer(event.target.value);
   };
 

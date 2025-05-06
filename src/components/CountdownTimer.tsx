@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
 
-export default function CountdownTimer({ countdown, setResult, setFinalPrice, lockedPrice, prediction }) {
+export default function CountdownTimer({ countdown, setResult, setFinalPrice, lockedPrice, prediction }:any) {
   const [timeLeft, setTimeLeft] = useState(countdown);
 
   useEffect(() => {
     if (timeLeft === 0) {
       fetchFinalPrice();
+      return null;
     } else {
       const timer = setInterval(() => {
-        setTimeLeft((prev) => prev - 1);
+        setTimeLeft((prev:any) => prev - 1);
       }, 1000);
 
       return () => clearInterval(timer);

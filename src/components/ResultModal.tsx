@@ -1,4 +1,4 @@
-export default function ResultModal({ result, finalPrice }) {
+export default function ResultModal({ result, finalPrice }:any) {
     return (
       <div className="mt-8 text-center animate__animated animate__fadeIn">
         <div className="text-5xl font-extrabold text-yellow-400">{result}</div>

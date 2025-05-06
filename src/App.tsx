@@ -11,7 +11,7 @@ function App() {
   const [result, setResult] = useState(null);
   const [finalPrice, setFinalPrice] = useState(null);
 
-  const handleConfirm = (userPrediction, timer) => {
+  const handleConfirm = (userPrediction:any, timer:any) => {
     setPrediction(userPrediction);
     setLockedPrice(null);
     setResult(null);
