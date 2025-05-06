@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BTC Price Prediction Game</title>
+    <meta name="description" content="Predict Bitcoin prices in real time and test your crypto instincts. A fun and engaging crypto game!" />
+    <meta name="theme-color" content="#111827" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS fallback style -->
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #1e3a8a, #6d28d9, #000);
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #loading {
+        margin-top: 20%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #facc15;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="loading">⚡ Loading BTC Game...</div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
